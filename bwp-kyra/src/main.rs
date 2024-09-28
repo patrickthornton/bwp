@@ -5,10 +5,10 @@ fn main() {
     // 1012, 1123, 1234, ...
     // 2024, 2130, 2241, ...
     // for instance in base 5
-    const GROUPING_SIZE: usize = 4;
+    const NUM_GROUPINGS: usize = 100;
 
     for base in (3..=303).step_by(2) {
-        let groupings = get_groupings(base, GROUPING_SIZE);
+        let groupings = get_groupings(base, NUM_GROUPINGS);
 
         if check(groupings) {
             println!("woo!!!! for base {}", base);
